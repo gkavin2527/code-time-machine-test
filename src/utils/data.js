@@ -1,6 +1,6 @@
 // src/utils/data.js
 function processData(data) {
-    if (!data) return [];
+    if (!Array.isArray(data)) return [];
     return data.map(x => x * 2);
   }
   
